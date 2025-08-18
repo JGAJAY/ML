@@ -1,0 +1,40 @@
+Q1.)OVERFIT
+
+Q2.)	Metric		Value	Interpretation
+	MSE		438.99	Fairly high → large squared errors on average.
+	RMSE		20.95	On average, your predictions are ~21 meters off.
+	MAPE		120.36%	Very poor accuracy — errors are larger than actual 				values.
+	R²		0.37	Only 37% of the variance in groundwater levels is 				explained by the model.
+The relationship between the selected features (Latitude, Longitude, Well_Depth) and Pre-monsoon_2022 is not strong or not linear.
+
+Q8.) ✅ Best k value found: 1
+
+✅ Best cross-validation accuracy: 99.56%
+
+✅ Test set accuracy: 100%
+
+✅ Confusion Matrix shows no misclassifications for class 0 and only 1 misclassification for class 1.
+
+🔎 Inference:
+Your model likely exhibits overfitting, because:
+
+k=1 means it's memorizing training data (very low bias, very high variance).
+
+Very high accuracy on the test set is suspicious unless you’ve verified with a completely unseen dataset.
+
+Even one neighbor (k=1) performing almost perfectly suggests low generalizability.
+
+\begin{thebibliography}{00}
+\bibitem{b1} M. B. Raj, C. Priya (2024). GROUND WATER LEVEL PREDICTION USING MACHINE LEARNING. International Research Journal of Modernization in Engineering Technology and Science. 
+\bibitem{b2} T. Zeng, K. Yin, H. Jiang, X. Liu, Z. Guo and D. Peduto (2022). Groundwater level prediction based on a combined intelligence method for the Sifangbei landslide in the Three Gorges Reservoir Area. Scientific Reports, 12(1). .
+\bibitem{b3} F. Feng, H. Ghorbani and A. E. Radwan (2024). Predicting groundwater level using traditional and deep machine learning algorithms. Frontiers in Environmental Science, 12. h
+\bibitem{b4} V. Kumar, N. Kedam, K. V. Sharma,K. M. Khedher and A. E. Alluqmani (2023). A comparison of machine learning models for predicting rainfall in urban metropolitan cities. Sustainability, 15(18), 13724. 
+\bibitem{b5} N. Mungale and J. Shinde (2024, January 12). Rainfall Forecasting: A Comparative Analysis of Deep Learning and Machine Learning Models with Application to Environmental Data. 
+\bibitem{b6} T. V. Tran, A. Peche, R. Kringel, k. Brömme and S. Altfelder (2025). Machine Learning-Based Reconstruction and Prediction of groundwater time Series in the Allertal, Germany. Water, 17(3), 433. 
+\bibitem{b7} A. Jari, E. M. Bachaoui, S. Hajaj, A. Khaddari, Y. Khandouch,, A. E. Harti, A. Jellouli and M. Namous (2023). Investigating machine learning and ensemble learning models in groundwater potential mapping in arid region: case study from Tan-Tan water-scarce region, Morocco. Frontiers in Water, 5.
+\bibitem{b8} A. Ali, A. Ahmed and M. Abbod (2024, November 28). Groundwater level predictions in the Thames Basin, London over extended horizons using Transformers and advanced machine learning models.
+\bibitem{b9} G. Tuysuzoglu, K. U. Birant and D. Birant (2023). Rainfall prediction using an ensemble machine learning model based on K-Stars. Sustainability, 15(7), 5889. 
+\bibitem{b10} P. N. Triveni, Dr. G. JawaherlalNehru, Dr. R. Santhoshkumar and S. BavanKumar (2023). A REVIEW ON RAINFALL PREDICTION USING MACHINE LEARNING ALGORITHMS: MLR AND ARTIFICIAL NEURAL NETWORK. In ResMilitaris: Vol. vol.13 (Issue n°4) [Journal-article]. 
+\end{thebibliography}
+\vspace{12pt}
+\color{red}

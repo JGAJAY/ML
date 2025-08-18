@@ -1,0 +1,19 @@
+Q1.)Months with high entropy, such as OCT_%DEP_2022 (1.529), show that the data is more evenly spread across value ranges, meaning greater variability and unpredictability.
+Months with low entropy, like JAN_R/F_2018 (0.196), have rainfall values concentrated in fewer ranges, indicating more uniform conditions across districts.
+An entropy value of 0, such as for DEC_R/F_2022, means all districts had rainfall in the same range, reflecting no variability at all.
+
+Q2.)The Gini index values measure the impurity or diversity of rainfall and percentage departure distributions across districts.
+Low Gini values, such as JAN_R/F_2018 (0.059), indicate that most districts fall into the same rainfall range, showing low diversity in values.
+Moderate values, like MAR_R/F_2018 (0.222), suggest a somewhat more even spread of rainfall data across multiple bins.
+High Gini values, such as OCT_%DEP_2022 (0.582), reflect greater diversity and a more balanced distribution of values across bins.
+A Gini index of 0, as seen for DEC_R/F_2022 and DEC_%DEP_2022, means there is no variability, with all districts having values in the same bin.
+
+Q3.)
+
+Q4.)In the dataset, most rainfall values in JAN_R/F_2018 are very close to zero. With equal-width binning, almost all values fall into the lowest bin while only larger values like 3.4 appear in higher bins, highlighting the skewness of the data. With equal-frequency binning, many values still fall into the same bin because of repeated zeros, which reduces the ability to distinguish between small variations. Thus, equal-width binning better reveals outliers, while equal-frequency binning balances data distribution but may hide differences when values are highly concentrated.
+
+Q5.)The decision tree selected District as the root node because it provides the highest information gain for predicting January 2018 rainfall. Most districts were classified into the lowest rainfall bin (0), showing very little rainfall. However, some districts like Hanumangarh were placed in a higher bin (3), indicating more rainfall compared to the rest. This means that rainfall in January 2018 varied mainly by district, with most areas being dry while a few experienced higher rainfall
+
+Q6.)The decision tree has chosen “District” as the root node, meaning that the district attribute provides the highest information gain for classifying the target attribute (JAN_R/F_2018 after binning). From the visualization, almost all districts lead to the same class outcome (Class 0), except for Hanumangarh, which leads to a distinct class (Class 3). This indicates that rainfall behavior in January 2018 across most districts is similar, with very little variation, except for some anomalies in specific districts like Hanumangarh. Thus, the tree is quite simple: it primarily splits based on the district, but the majority of outcomes fall under one dominant class, suggesting low diversity in rainfall patterns for that month across Rajasthan.
+
+Q7.)The decision boundary shows that most regions are classified into a single dominant class, meaning rainfall in January and February is usually very low. The tree creates a few narrow boundaries to separate rare higher-rainfall cases, but overall, the data is highly imbalanced, and the model mainly predicts the majority class.

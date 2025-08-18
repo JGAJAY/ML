@@ -1,0 +1,14 @@
+To use regression with one feature, you're going to first split your data into training and test sets, select one feature (independent variable) from the training data set, and with the target variable (dependent variable) train your LinearRegression model with using one feature, then predict on your training set.
+
+
+To assess the model that has been trained, calculate MSE, RMSE, MAPE, and R² for both the training and testing predictions, and then compare the resulting metrics to understand the accuracy of your model and how it may be overfitting or underfitting.. 
+
+Re-run the regression procedure from problem A1, but this time use multiple features (or all the features) and again calculate metrics as you did in problem A2 to compare the performance of the model that only used one feature with the multiple feature model. 
+
+In order to conduct k-means clustering, we simply remove the target variable from the dataset, fit a KMeans model with n_clusters=2 on the training data, and retrieve the cluster labels plus the cluster centers.
+
+For your clustering in A4, calculate the three evaluation metrics: Silhouette Score (describes cluster cohesion and separation), Calinski–Harabasz Score (describes the dispersion between clusters), and Davies–Bouldin Index (described as the average cluster similarity).
+
+Carry out k-means clustering for a number of values k, (e.g., from 2 - 10), then compute the Silhouette Score, Calinski–Harabasz Score, and Davies–Bouldin Index for each k. Once you have these metrics computed for each k, you can plot these metrics against k and visually determine the most appropriate number of clusters.
+
+Also use the elbow method: for k = 2 - 20, plot k against the model's inertia (i.e., the sum of squared distances within clusters) and observe where inertia reduces appreciably slower — that is, this latest k value would represent the essentially optimal value of k.
